@@ -1,0 +1,36 @@
+# Data Preparation
+
+In this notebook we will prepare our data for our search function to use.
+Currently we have data stored in mentiond below csv file.
+    * netflixData.csv
+
+# Import the needed modules...
+import pandas as pd
+from collections import defaultdict
+from os import getcwd
+
+# Data Engineering
+    *Get data in dataframes.
+
+
+"""
+    Read data from netflixData.csv
+"""
+df_movies            = pd.read_csv(netflixData.csv)
+df = df.fillna("unavailable")
+netflixData_table_columns = df_movies.columns.tolist()
+print(f"COLUMNS : {neyflixData_table_columns}")
+
+# A user will always search a movie by its title, Director, Genres, Casts so we will create a Global secondary index to be able to perform search our datastore.
+
+#it will obviously take some extra space but almost negligible as compared to the size of the original data.
+In addition, It will make our searching faster and efficient so it's a good deal.
+
+# Now we may create the list of mentioned column to make your search less time consuming: 
+    1) now we will create the list of Titles
+    2) now we will create the list of Titles,Diresctore,Genres by seperate them.
+
+# Now we will make directories to store the data through which we   can search easily and attach their respective info with them in the dictionary
+
+# Now we will import json and 
+storing and transmitting accros a network the data that we have stored in the dictionary
